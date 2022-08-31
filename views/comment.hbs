@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Comments</title>
+</head>
+
+<body>
+
+    <!-- Comment window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+	    <i class="fas fa-arrow-left mb-2 ml-2 mt-2" style="cursor: pointer;" id="back"></i>
+            <div class="card-body comment">
+                <h5 style="font-family: sans-serif;">Comment <span
+                        style="font-size: 15px; font-weight: bold;">(1-50)</span>:</h5>
+                <textarea class="form-control" id="comment" placeholder="Write a comment"
+                    style="border: solid grey 2px;"></textarea><div id="comment_index">0</div>
+                <div id="comment-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;"></div>
+                <br><br>
+                <h5 style="font-family: sans-serif;">Name <span
+                        style="font-size: 15px; font-weight: bold;">(1-40)</span>:</h5>
+                <input type="text" class="form-control" id="name" placeholder="Write your name"
+                    style="border: solid grey 2px;"><div id="name_index">0</div>
+                <div id="name-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">
+                </div>
+                <br>
+                <center>
+                    <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                </center>
+                <button class="btn btn-primary" id="sendButton">Post</button>
+            </div>
+        </div>
+        <br>
+        <div class="comments" id="comments">
+        </div>
+        <center>
+            <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+            <p class="copyright">Email - lucero2a134@gmail.com</p>
+            <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+            <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+        </center>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/comment.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

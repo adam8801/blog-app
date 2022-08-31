@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Skills</title>
+</head>
+
+<body>
+
+    <!-- Edit Skills window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <i class="fas fa-arrow-left mb-2" style="cursor: pointer;" id="back"></i>
+                <h1 class="guide-heading p-1" id="head"></h1>
+                <br>
+                <div class="languages">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Languages</h5>
+
+                    <div class="skill-edit-tag m-2 p-2" id="javaScript">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"JavaScript"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="c">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"C"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="cPlusPlus">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"C++"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="python">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Python"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="php">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Php"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="html">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"HTML"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="css">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"CSS"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="java">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Java"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="cSharp">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"C#"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="kotlin">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Kotlin"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="sql">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"SQL"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="swift">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Swift"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="go">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Go"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="pearl">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Pearl"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="vbDotNet">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"VB.NET"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="ruby">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Ruby"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="rust">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Rust"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="matlab">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"MATLAB"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="r">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"R"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="noSql">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"NO SQL"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="assemblyLevelLanguage">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Assembly Level Language"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="developer">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Developer</h5>
+
+                    <div class="skill-edit-tag m-2 p-2" id="frontend">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Frontend"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="backend">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Backend"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="fullstack">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"FullStack"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="mobile">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Mobile"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="web">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Web"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="embedded">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Embedded"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="software">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Software"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="dataScientist">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Data Scientist"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="devops">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"DevOps"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="game">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Game"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="networkSecurity">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Network Security"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hardware">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Hardware</h5>
+
+                    <div class="skill-edit-tag m-2 p-2" id="verilog">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Verilog"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="fpga">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"FPGA"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="engineeringDesign">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Engineering Design"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="boardDesign">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Board Design"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="development">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Development Tools</h5>
+
+                    <div class="skill-edit-tag m-2 p-2" id="nodeJs">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Node js"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="django">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Django"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="angular">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Angular"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="react">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"React"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="flutter">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Flutter"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="tensorFlow">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Tensor Flow"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="android">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Android"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="spring">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Spring"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="rubyOnRails">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"RubyOnRails"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="express">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Express"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="DotNetCore">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">".Net Core"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="vueDotjs">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Vue.js"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="ember">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Ember"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="xamarin">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Xamarin"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="laravel">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Laravel"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="arduino">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Arduino"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="raspberryPi">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Raspberry Pi"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="linux">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Linux"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="proteus">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Proteus"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="xilinx">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Xilinx"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="labview">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"LabView"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="ltSpice">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"LtSpice"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="simulink">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Simulink"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="autoCad">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"AutoCad"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="solidWork">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"SolidWork"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="ansysFluent">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"AnsysFluent"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="microsoftProject">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Microsoft Porject"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="excel">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Excel"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="sketchUp">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"SketchUp"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="autoCadCivil3d">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"AutoCadCivil3d"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="chemcad">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Chemcad"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Technology</h5>
+
+                    <div class="skill-edit-tag m-2 p-2" id="cyberSecurity">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Cyber Security"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="DL">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"DL(Deep Learning)"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="ML">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"ML"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="VrAr">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"VR AR"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="blockchain">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"BlockChain"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="dataAnalytics">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Data Analytics"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="iot">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"IOT"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="robotics">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Robotics"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="aerospace">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Aerospace"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="communicationSkills">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Soft Skills</h5>
+
+                    <div class="skill-edit-tag m-2 p-2" id="analyticalThinking">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Analytical Thinking"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="creativity">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Creativity"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="criticalThinking">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Critical Thinking"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="communicationSkill">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Communication Skills"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2" id="problemSolving">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Problem Solving"</h5>
+                        <div class="progress" style="background: rgb(223, 213, 213);">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%;"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+                <p class="copyright">Email - lucero2a134@gmail.com</p>
+                <center>
+                    <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+                    <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/profileSkills.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

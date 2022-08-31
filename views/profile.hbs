@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <!--------------- Nav Bar---------- -->
+    <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h2 style="font-family: sans-serif;">Lucero</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/connections">Connections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/pagesL">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/profilePage">Profile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Settings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li id="skills"><a class="dropdown-item" href="/editSkills">Edit Skills</a></li>
+              <li><a class="dropdown-item" href="/editProfile">Edit Profile</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/guide">Lucero's Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/feedback">Feedback</a>
+          </li>
+          <li class="nav-item" id="logOut">
+            <p style="color: white;">Log Out</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <!------------x--- Nav Bar------x---- -->
+
+    <!-- Profile Window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+
+                <!--------------- Profile Pic---------- -->
+                <center>
+                    <img src="" class="img-fluid editPr-img" alt="." id="pic"><br>
+                    <i id="tick" class="fas fa-check-circle fa-2x mt-2"
+                        style="color: rgb(7, 7, 133); float: right;"></i>
+                </center>
+                <!-------------x-- Profile Pic--x-------- -->
+                <br>
+                <!----------- Profile Features ------------------>
+                <div class="guide-blog p-2">
+                    <center>
+                        <h5 style="font-family: sans-serif;" id="name"></h5>
+                    </center>
+                </div>
+                <br>
+                <center>
+                    <h5 style="font-family: sans-serif;" id="status"></h5>
+                </center>
+                <div class="connection-tags">
+                    <a href="/profileDetails" style="text-decoration: none;">
+                        <div class="tag m-1 p-2">
+                            <h5 style="font-family: sans-serif;">Profile</h5>
+                        </div>
+                    </a>
+                    <div class="tag m-1 p-2" id="type1">
+                        <h5 style="font-family: sans-serif;">Connections</h5>
+                    </div>
+                    <div class="tag m-1 p-2" id="type2">
+                        <h5 style="font-family: sans-serif;">Pages</h5>
+                    </div>
+                    <div class="tag m-1 p-2" id="tagname">
+                        <h5 style="font-family: sans-serif;">Tagname</h5>
+                    </div>
+                    <div id="skillShow">
+                        <a href="/profileSkills" style="text-decoration: none;">
+                            <div class="tag m-1 p-2">
+                                <!-- for freeze no Skills -->
+                                <h5 style="font-family: sans-serif;">Skills</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!----------x---- Profile Features -----x------->
+            </div>
+        </div>
+
+        <!------------ Reload ----------->
+        <div class="reload">
+            <center>
+                <div class="card carded my-3" style="width: fit-content;" id="reload">
+                    <div class="card-body p-3">
+                        <i class="fas fa-redo fa-2x" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <!------------x Reload --x---------->
+
+        <!-------------- Blogs ------------>
+        <div class="blogs flex-row" id="list"> 
+            
+        </div>
+        <div class="more m-2" style="text-align: center;">
+            <button class="btn btn-primary" id="more">More</button>
+        </div>
+        <br>
+        <!------------x- Blogs--------x--- -->
+
+        <center>
+          <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+          <p class="copyright">Email - lucero2a134@gmail.com</p>
+          <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+          <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+        </center>
+    </div>
+
+    <script src="js/profile.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Page</title>
+</head>
+
+<body>
+
+    <!-- Page Window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+		<i class="fas fa-arrow-left mb-2" style="cursor: pointer;" id="back"></i>
+                <!--------------- Page Pic---------- -->
+                <center>
+                    <img src="" class="img-fluid editPr-img" alt="." id="pic">
+                    <i id="tick" class="fas fa-check-circle fa-2x mt-2"
+                        style="color: rgb(7, 7, 133); float: right;"></i>
+                </center>
+                <!-------------x-- Page Pic--x-------- -->
+                <br>
+                <!----------- Page Features ------------------>
+                <div class="guide-blog p-2">
+                    <center>
+                        <h5 style="font-family: sans-serif;" id="head">abc - Jsj</h5>
+                    </center>
+                </div>
+                <br>
+                <center>
+                    <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                </center>
+                <button class="btn btn-primary mb-2" style="width: 100%;" id="connect"></button>
+                <div class="connection-tags">
+                    <div class="tag m-1 p-2" id="AdminList">
+                        <h5 style="font-family: sans-serif;">Admins</h5>
+                    </div>
+                    <div class="tag m-1 p-2" id="MemberList">
+                        <h5 style="font-family: sans-serif;">Members</h5>
+                    </div>
+                    <div class="tag m-1 p-2 more-dropdown">
+                        <h5 style="font-family: sans-serif;">:: More</h5>
+                        <div class="dropdown-content">
+                            <p id="about" style="color: black;">About</p>
+                            <p id="owner" style="color: black;">Owner</p>
+                            <p id="report" style="color: black;"></p>
+                        </div>
+                    </div>
+                </div>
+                <!----------x---- Page Features -----x------->
+            </div>
+        </div>
+
+        <!------------- Post Blog ------------->
+        <div class="post-blog">
+            <div class="card carded my-3" style="width: 100%;">
+                <div class="card-body">
+                    <h5 style="font-family: sans-serif;">Blog <span><i class="fas fa-pen mb-2"></i></span>(1-1000):</h5>
+                    <textarea class="form-control" id="post" style="border: solid grey 2px;" rows="5"
+                        placeholder="Write a blog"></textarea><div id="post_index">0</div>
+                    <br>
+                    <h6 style="font-family: sans-serif; font-weight: bold;">Attach Links (use ; as seperator, Max 10 items, each not exceeding 60 in length) </h6>
+                    <input type="text" class="form-control" id="links" placeholder="link1;link2;link3 etc."
+                        style="border: solid grey 2px;">
+                    <br>
+                    <div class="post-features">
+                        <div class="image-post">
+                            <i class="fas fa-image p-2 fa-2x" style="color: #0937ad; cursor: pointer;"></i>
+                            <span style="font-size: small; font-weight:bold">(Max 3MB)</span>
+                            <input type="file" id="img" name="img" accept=".png, .jpg, .jpeg">
+                        </div>
+                        <div class="tag p-2">
+                            <div class="spinner-border" role="load" id="load1" style="display: none;"></div>
+                            <h5 style="font-family: sans-serif; color: white; text-decoration:underline" id="posting">Post</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------x------ Post Blog ----x-------->
+
+        <!------------ Reload ----------->
+        <div class="reload">
+            <center>
+                <div class="card carded my-3" style="width: fit-content;" id="reload">
+                    <div class="card-body p-3">
+                        <i class="fas fa-redo fa-2x" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <!------------x Reload --x---------->
+
+        <!-------------- Blogs ------------>
+        <div class="blogs flex-row" id="list">
+        </div>
+        <div class="more m-2" style="text-align: center;">
+            <button class="btn btn-primary" id="more">More</button>
+        </div>
+        <br>
+        <!------------x- Blogs--------x--- -->
+
+        <center>
+            <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+            <p class="copyright">Email - lucero2a134@gmail.com</p>
+            <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+            <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+        </center>
+    </div>
+
+    <script src="js/page.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>

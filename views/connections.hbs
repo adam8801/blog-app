@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Connections</title>
+</head>
+
+<body>
+
+    <!--------------- Nav Bar---------- -->
+    <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h2 style="font-family: sans-serif;">Lucero</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/connections">Connections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/pagesL">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/profilePage">Profile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Settings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li id="skills"><a class="dropdown-item" href="/editSkills">Edit Skills</a></li>
+              <li><a class="dropdown-item" href="/editProfile">Edit Profile</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/guide">Lucero's Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/feedback">Feedback</a>
+          </li>
+          <li class="nav-item" id="logOut">
+            <p style="color: white;">Log Out</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <!------------x--- Nav Bar------x---- -->
+
+    <!-- Connections Window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <!--------------- Connections-tags --------------->
+                <div class="connection-tags">
+                    <a href="/connections" style="text-decoration: none;">
+                        <div class="tag m-1 p-2">
+                            <h5 style="font-family: sans-serif;">People</h5>
+                        </div>
+                    </a>
+                        <div class="tag m-1 p-2" id="requests">
+                            <h5 style="font-family: sans-serif;">Requests</h5>
+                        </div>
+                        <div class="tag m-1 p-2" id="connected">
+                            <h5 style="font-family: sans-serif;">Connected</h5>
+                        </div>
+                        <div class="tag m-1 p-2" id="recent">
+                            <h5 style="font-family: sans-serif;">Recent Chats</h5>
+                        </div>
+                </div>
+                <!-------------x-- Connections-tags --x----------->
+                <hr style="color: rgb(66, 64, 64); height: .5rem;">
+                <!-------------------- Connections-body- ------------>
+                <div class="all" id="all">
+                  <div class="people" id="people1"></div>
+                  <div class="more">
+                    <div class="more m-2" style="text-align: center;">
+                      <button class="btn btn-primary" id="more1">More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="requests" id="people2" style="display: none;">
+                </div>
+                <div class="people" id="people3" style="display: none;">
+                </div>
+                <div class="recent-chats" id="people4" style="display: none;">
+                    <center>
+                        <h5 style="font-family: sans-serif;">"Here only new messages will be visible. For viewing old
+                            chats view them from chat feature"</h5>
+                    </center>
+                    <div class="chat-list" id="chats">
+                    </div>
+                </div>
+                <!-------------x------- Connections-body ---x----------->
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="js/connections.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>

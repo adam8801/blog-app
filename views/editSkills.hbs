@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Edit Skills</title>
+</head>
+
+<body>
+
+    <!-- Edit Skills window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <i class="fas fa-arrow-left mb-2" id="back" style="cursor: pointer;"></i>
+                <h1 class="guide-heading p-1">Your Skills Set</h1>
+                <br>
+                
+                <div class="languages">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Languages</h5>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"JavaScript" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="javaScript"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj0">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"C" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="c"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj1">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"C++" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="cPP"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj2">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Python" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="python"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj3">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Php" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="php"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj4">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"HTML" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="html"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj5">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"CSS" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="css"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj6">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Java" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="java"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj7">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"C#" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="cS"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj8">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Kotlin" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="kotlin"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj9">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"SQL" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="sql"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj10">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Swift" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="swift"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj11">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Go" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="go"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj12">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Pearl" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="pearl"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj13">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"VB.Net" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="vbDotNet"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj14">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Ruby" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ruby"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj15">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Rust" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="rust"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj16">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"MATLAB" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="matlab"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj17">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"R" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="r"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj18">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"NOSQL" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="noSql"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj19">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Assembly Level Language" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="all"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillj20">
+                    </div>
+                </div>
+                <div class="developer">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Developer</h5>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Frontend" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="frontend"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld0">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Backend" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="backend"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld1">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"FullStack" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="fullstack"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld2">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Mobile" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="mobile"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld3">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Web" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="web"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld4">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Embedded" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="embedded"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld5">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Software" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="software"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld6">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Data Scientist" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="dataS"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld7">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"DevOps" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="devops"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld8">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Game" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="game"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld9">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Network Security" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="nS"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skilld10">
+                    </div>
+                </div>
+                <div class="hardware">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Hardware</h5>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Verilog" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="veri"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillh0">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"FPGA" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="fpga"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillh1">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Engineering Design" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ed"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillh2">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Board Design" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="bd"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillh3">
+                    </div>
+                </div>
+                <div class="development-tools">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Development Tools</h5>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Node js" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="node"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde1">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Django" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="django"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde2">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Angular" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="angular"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde3">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"React" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="react"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde4">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Flutter" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="flutter"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde5">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Tensor Flow" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="tensor"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde6">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Android" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="android"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde7">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Spring" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="spring"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde8">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"RubyOnRails" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="rubyOR"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde9">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Express" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="express"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde10">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">".Net Core" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="core"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde11">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Vue.js" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="vueJs"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde12">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Ember" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ember"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde13">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Xamarin" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="xamarin"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde14">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Laravel" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="laravel"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde15">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Arduino" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="arduino"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde16">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Raspberry Pi" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="rPi"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde17">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Linux" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="linux"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde18">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Proteus" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="proteus"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde19">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Xilinx" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="xilinx"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde20">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"LabView" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="labview"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde21">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"LtSpice" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ltSpice"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde22">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Simulink" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="simulink"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde23">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"AutoCad" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="autoCad"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde24">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"SolidWork" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="solidWork"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde25">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"AnsysFluent" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ansysFluent"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde26">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Microsoft Project" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="mP"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde27">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Excel" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="excel"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde28">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"SketchUp" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="sketchUp"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde29">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"AutoCadCivil3d" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="autoCivil"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde30">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Chemcad" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="chemcad"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillde31">
+                    </div>
+                </div>
+                <div class="technology">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Technology</h5>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Cyber Security" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="cs"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt0">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Deep Learning" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="dl"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt1">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"ML" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ml"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt2">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"VR AR" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="va"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt3">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"BlockChain" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="bloackChain"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt4">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Data Analytics" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="dataA"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt5">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"IOT" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="iot"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt6">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Robotics" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="robotics"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt7">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Aerospace" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="aerospace"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skillt8">
+                    </div>
+                </div>
+                <div class="soft-skills">
+                    <h5 class="guide-heading p-2" style="text-align: left;">Soft Skills</h5>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Analytical Thinking" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="at"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skills0">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Creativity" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="creativity"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skills1">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Critical Thinking" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ct"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skills2">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Communication Skill" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="CS"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skills3">
+                    </div>
+                    <div class="skill-edit-tag m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">"Problem Solving" (0 to 10)</h5>
+                        <h6 style="font-family: sans-serif; font-weight: bold;" id="ps"></h6>
+                        <input type="range" min="0" max="10" value="0" class="slider" id="skills4">
+                    </div>
+                </div>
+                <br>
+                <center>
+                    <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                </center>
+                <button class="btn btn-primary mb-2" style="width: 100%;" id="sendButton">Update</button>
+                <br><br>
+                <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+                <p class="copyright">Email - lucero2a134@gmail.com</p>
+                <center>
+                    <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+                    <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/editSkills.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

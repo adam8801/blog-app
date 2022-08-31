@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Profiles</title>
+</head>
+
+<body>
+
+    <!-- Other Profile Window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+		<i class="fas fa-arrow-left mb-2" style="cursor: pointer;" id="back"></i>
+                <!--------------- Profile Pic---------- -->
+                <center>
+                    <img src="" class="img-fluid editPr-img" alt="." id="pic">
+                    <i class="fas fa-check-circle fa-2x mt-2" style="color: rgb(7, 7, 133); float: right;" id="tick"></i>
+                </center>
+                <!-------------x-- Profile Pic--x-------- -->
+                <br>
+                <!----------- Profile Features ------------------>
+                <div class="guide-blog p-2">
+                    <center>
+                        <h5 style="font-family: sans-serif;" id="name"></h5>
+                    </center>
+                </div>
+                <br>
+                <center>
+                    <h5 style="font-family: sans-serif;" id="status"></h5>
+                </center>
+                <br>
+                <div class="other-profile-chat-row m-2">
+                    <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                    <button class="btn btn-primary mb-2" style="width: 100%;" id="connect"></button>
+                    <div class="p-2" style="cursor: pointer;" id="messages">
+                        <i class="fas fa-message fa-2x" style="color: rgb(40, 118, 207);"></i>
+                    </div>
+                </div>
+                <div class="connection-tags">
+                    <a href="/profileDetails" style="text-decoration: none;">
+                        <div class="tag m-1 p-2">
+                            <h5 style="font-family: sans-serif;">Profile</h5>
+                        </div>
+                    </a>
+                    <div class="tag m-1 p-2" id="type1">
+                        <h5 style="font-family: sans-serif;">Connections</h5>
+                    </div>
+                    <div class="tag m-1 p-2" id="type2">
+                        <h5 style="font-family: sans-serif;">Pages</h5>
+                    </div>
+                    <div id="skillShow">
+                        <a href="/profileSkills" style="text-decoration: none;">
+                            <div class="tag m-1 p-2">
+                                <!-- for freeze no Skills -->
+                                <h5 style="font-family: sans-serif;">Skills</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!----------x---- Profile Features -----x------->
+            </div>
+        </div>
+
+        <!------------ Reload ----------->
+        <div class="reload">
+            <center>
+                <div class="card carded my-3" style="width: fit-content;"  id="reload">
+                    <div class="card-body p-3">
+                        <i class="fas fa-redo fa-2x" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <!------------x Reload --x---------->
+
+        <!-------------- Blogs ------------>
+        <div class="blogs flex-row" id="list">
+        </div>
+        <div class="more m-2" style="text-align: center;">
+            <button class="btn btn-primary" id="more">More</button>
+        </div>
+        <br>
+        <!------------x- Blogs--------x--- -->
+
+        <center>
+            <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+            <p class="copyright">Email - lucero2a134@gmail.com</p>
+            <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+            <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+        </center>
+    </div>
+
+    <script src="js/otherProfile.js"></script>
+  <script src="/jq/jquery.js"></script>
+  <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>

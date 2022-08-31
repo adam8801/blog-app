@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+
+    <!-- Edit Profile window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <i class="fas fa-arrow-left mb-2" id="back" style="cursor: pointer;"></i>
+                <h1 class="guide-heading p-1">Edit Profile</h1>
+                <center>
+                    <div class="profile-pic">
+                        <img src="" class="img-fluid editPr-img" alt="." id="pic"><br>
+                    </div>
+                    <i class="fas fa-camera fa-2x mt-2 mb-2" style="color: #2d7eff; cursor: pointer;"></i>
+                    <input type="file" id="img" name="img" accept="image/png, image/jpeg">(Max 3MB)
+                </center>
+                <div class="edit_profile">
+                    <br>
+                    <h5 style="font-family: sans-serif;">Status <span
+                            style="font-size: 15px; font-weight: bold;">(1-100)</span>:</h5>
+                    <input type="text" class="form-control" id="status" placeholder="Status"
+                        style="border: solid grey 2px;"><div id="status_index">0</div>
+                    <div id="status-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">
+                    </div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">Current Designation <span
+                            style="font-size: 15px; font-weight: bold;">(1-50)</span>:</h5>
+                    <input type="text" class="form-control" id="currentDesignation" placeholder="Current Designation"
+                        style="border: solid grey 2px;"><div id="currentDesignation_index">0</div>
+                    <div id="designation-validate"
+                        style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;"></div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">Current Location <span
+                            style="font-size: 15px; font-weight: bold;">(1-50)</span>:</h5>
+                    <input type="text" class="form-control" id="location" placeholder="Current Location"
+                        style="border: solid grey 2px;"><div id="location_index">0</div>
+                    <div id="location-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">
+                    </div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">About <span
+                            style="font-size: 15px; font-weight: bold;">(1-250)</span>:</h5>
+                    <textarea class="form-control" id="about" style="border: solid grey 2px;" rows="4">About</textarea>
+		    <div id="about_index">0</div>
+                    <div id="about-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">
+                    </div>
+                    <br><br>
+                    <div class="radio-box p-3">
+                        <h6 style="font-family: sans-serif; font-weight: bold;">Choose type</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="student">
+                            <label class="form-check-label" for="student">
+                                Student
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="nonStudent">
+                            <label class="form-check-label" for="nonStudent">
+                                Non Student
+                            </label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="radio-box p-3">
+                        <h6 style="font-family: sans-serif; font-weight: bold;">Choose account type</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="private" id="public">
+                            <label class="form-check-label" for="public">
+                                Public (Anyone can see your posts)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="private" id="private">
+                            <label class="form-check-label" for="private">
+                                Private (Only your connections can see your posts)
+                            </label>
+                        </div>
+                    </div><br>
+                    <div class="add-list m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">Projects (Max 10 items) use ; as
+                            seperator (each of max length 100) </h5>
+                    </div>
+                    <div class="list-tags">
+                        <input type="text" class="form-control" id="newProject"
+                            placeholder="Eg- Project1; Project2 etc." style="border: solid grey 2px;">
+                        <div style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">Please note that the
+                            above values will overwrite values for this field so if you wish to include the values given
+                            below you should also add them in the above field</div>
+                        <div class="list" id="projects">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="add-list m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">Education (Max 10 items) use ; as
+                            seperator (each of max length 100) </h5>
+                    </div>
+                    <div class="list-tags">
+                        <input type="text" class="form-control" id="newEducation" placeholder=""
+                            style="border: solid grey 2px;">
+                        <div style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">Please note that the
+                            above values will overwrite values for this field so if you wish to include the values given
+                            below you should also add them in the above field</div>
+                        <div class="list" id="education">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="add-list m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">Hobbies (Max 10 items) use ; as
+                            seperator (each of max length 100)</h5>
+                    </div>
+                    <div class="list-tags">
+                        <input type="text" class="form-control" id="newHobbies" placeholder=""
+                            style="border: solid grey 2px;">
+                        <div style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">Please note that the
+                            above values will overwrite values for this field so if you wish to include the values given
+                            below you should also add them in the above field</div>
+                        <div class="list" id="hobbies">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="add-list m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">Work Experience (Max 10 items) use ; as
+                            seperator (each of max length 100)</h5>
+                    </div>
+                    <div class="list-tags">
+                        <input type="text" class="form-control" id="newWork" placeholder=""
+                            style="border: solid grey 2px;">
+                        <div style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">Please note that the
+                            above values will overwrite values for this field so if you wish to include the values given
+                            below you should also add them in the above field</div>
+                        <div class="list" id="work">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="add-list m-2 p-2">
+                        <h5 style="font-family: sans-serif; font-weight: bold;">Achievements (Max 10 items) use ; as
+                            seperator (each of max length 100)</h5>
+                    </div>
+                    <div class="list-tags">
+                        <input type="text" class="form-control" id="newAchievements" placeholder=""
+                            style="border: solid grey 2px;">
+                        <div style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">Please note that the
+                            above values will overwrite values for this field so if you wish to include the values given
+                            below you should also add them in the above field</div>
+                        <div class="list" id="achievements">
+                        </div>
+                    </div>
+                    <br>
+                    <center>
+                        <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                    </center>
+                    <button class="btn btn-primary mb-2" style="width: 100%;" id="update">Update</button>
+                </div><br>
+                <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+                <p class="copyright">Email - lucero2a134@gmail.com</p>
+                <center>
+                    <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+                    <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/editProfile.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

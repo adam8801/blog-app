@@ -1,0 +1,113 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --welcome: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    --theme: #0937ad;
+    --new-theme: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    --themeBack: #2e5ed9
+}
+
+body{
+    /*background-color: #252cb8;*/
+    /* background-color: #2e5ed9; */
+    /*background-color: #0937ad;*/
+    /*background-color: #5fb2f5;*/
+    background: var(--new-theme) fixed;
+    /*background: linear-gradient(to top, #37ecba 0%, #72afd3 100%) fixed;*/
+}
+
+.carded{
+    /* margin: 5rem 5rem; */
+    /* background-color: white; */
+    /* border: black;
+    border-style: solid;
+    border-width: .2rem; */
+    box-shadow: 15px 15px 15px black;
+    /* width: 50%; */
+    border-radius: .9rem;
+    /* padding: 2rem 2rem; */
+}
+
+.carded .card-body .front{
+    background: var(--new-theme) fixed;
+    /* background-color: #0937ad; */
+    border-radius: .9rem;
+    box-shadow: 15px 15px 15px black;
+    /* text-shadow: 1px 1px 3px; */
+    color: whitesmoke;
+}
+
+.carded .card-body .tags{
+    margin: 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.carded .card-body .tags .tag{
+    border-radius: .5rem;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    box-shadow: 15px 15px 15px black;
+}
+
+.carded .card-body .front-page{
+    /* background: var(--theme); */
+    background:var(--new-theme) fixed;
+    color: white;
+    box-shadow: 15px 15px 15px black;
+    border-radius: .9rem;
+}
+
+.carded .card-body .copyright{
+    text-align: center;
+    color: #2d7eff;
+    font-weight: bold;
+}
+
+.carded .card-body .front-page input:focus{
+    border: solid #0937ad 3px;
+}
+
+.carded .card-body .front-page .send-button{
+    background-color: #2f7fff;
+    box-shadow: 15px 15px 15px black;
+    border-radius: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+.carded .card-body .front-page .send-button:hover{
+    border: solid white 2px;
+}
+
+.carded .card-body .front-page .link{
+    font-size: 20px;
+}
+
+.carded .card-body .front-page .link:hover{
+    color: var(--theme) !important;
+}
+
+.carded .card-body .privacy-blog{
+    color: var(--theme);
+    border: solid var(--theme) 2px;
+    border-radius: 1rem;
+}
+
+.carded .card-body .privacy-heading{
+    text-align: center;
+    background: var(--theme);
+    color: white;
+    border-radius: .5rem;
+}
+
+.carded .card-body .front-page .type-gender{
+    color: black;
+    background-color: white;
+    border: solid var(--theme) 2px;
+    border-radius: 1.2rem;
+}

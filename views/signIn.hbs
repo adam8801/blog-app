@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>SignIn</title>
+</head>
+
+<body>
+
+    <!-- SigIn window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <center>
+                    <h1 class="card-title front py-1">Welcome to Lucero</h1>
+                </center>
+                <div class="tags flex-row">
+                    <a href="/" class="btn btn-primary mx-2 tag">SignIn</a>
+                    <a href="/signUp" class="btn btn-primary mx-2 tag">SignUp</a>
+                    <a href="/about" class="btn btn-primary mx-2 tag">About</a>
+                </div>
+                <div class="front-page px-5 py-2">
+                    <br>
+                    <h5 style="font-family: sans-serif;">Username <span style="font-size: 12px;">(1-15)</span>:</h5>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                    <div id="name-validate"></div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">Password <span style="font-size: 12px;">(1-15)</span>:</h5>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <div id="password-validate"></div>
+                    <br>
+                    <center>
+                        <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                        <i class="fas fa-paper-plane fa-3x send-button p-3" id="sendButton"></i>
+                    </center>
+                    <br>
+                    <center><a href="/forgotPassword" class="link" style="color: white;">Forgot Password ?</a></center>
+                </div>
+                <br>
+                <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+                <p class="copyright">Email - lucero2a134@gmail.com</p>
+                <center>
+                    <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+                    <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/signIn.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

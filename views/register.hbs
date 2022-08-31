@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>SignUp</title>
+</head>
+
+<body>
+
+    <!-- SigUp window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <center>
+                    <h1 class="card-title front py-1">Welcome to Example</h1>
+                </center>
+                <div class="tags flex-row">
+                    <a href="/" class="btn btn-primary mx-2 tag">SignIn</a>
+                    <a href="/signUp" class="btn btn-primary mx-2 tag">SignUp</a>
+                    <a href="/about" class="btn btn-primary mx-2 tag">About</a>
+                </div>
+                <div class="front-page px-5 py-2">
+                    <br>
+                    <h5 style="font-family: sans-serif;">OTP :</h5>
+                    <input type="text" class="form-control" id="otp" placeholder="OTP">
+                    <div id="otp-validate"></div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">Name <span style="font-size: 12px;">(1-40)</span>:</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+		    <div id="name_index">0</div>
+                    <div id="name-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">Status <span style="font-size: 12px;">(1-100)</span>:</h5>
+                    <input type="text" class="form-control" id="status" placeholder="Status">
+		    <div id="status_index">0</div>
+                    <div id="status-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">Age :</h5>
+                    <input type="text" class="form-control" id="age" placeholder="Age">
+                    <div id="age-validate"></div>
+                    <br>
+                    <br>
+                    <div class="type-gender p-3">
+                        <h6 style="font-family: sans-serif; font-weight: bold;">Choose type</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="student" checked>
+                            <label class="form-check-label" for="student">
+                                Student
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="type" id="nonStudent">
+                            <label class="form-check-label" for="nonStudent">
+                                Non Student
+                            </label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="type-gender p-3">
+                        <h6 style="font-family: sans-serif; font-weight: bold;">Gender</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="male" checked>
+                            <label class="form-check-label" for="male">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="female">
+                            <label class="form-check-label" for="female">
+                                Female
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="others">
+                            <label class="form-check-label" for="others">
+                                Others
+                            </label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">Current Designation <span
+                            style="font-size: 12px;">(1-50)</span>:</h5>
+                    <input type="text" class="form-control" id="currentDesignation" placeholder="Current Designation">
+		    <div id="currentDesignation_index">0</div>
+                    <div id="designation-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">Current Location <span style="font-size: 12px;">(1-50)</span>:
+                    </h5>
+                    <input type="text" class="form-control" id="location" placeholder="Current Location">
+		    <div id="location_index">0</div>
+                    <div id="location-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">DOB(in the given format) :</h5>
+                    <input type="text" class="form-control" id="dob" placeholder="DOB(DD/MM/YYYY)">
+                    <div id="dob-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">Email <span style="font-size: 12px;">(1-40)</span>:</h5>
+                    <input type="text" class="form-control" id="email" placeholder="Email">
+		    <div id="email_index">0</div>
+                    <div id="email-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">Password <span style="font-size: 12px;">(1-15)</span>:</h5>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+		    <div id="password_index">0</div>
+                    <div id="password-validate"></div>
+                    <br>
+                    <br>
+                    <h5 style="font-family: sans-serif;">Confirm Password <span style="font-size: 12px;">(1-15)</span>:
+                    </h5>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+		    <div id="confirmPassword_index">0</div>
+                    <div id="confirm-validate"></div>
+                    <br>
+                    <center>
+                        <div class="spinner-border" role="load" id="load" style="display: none;"></div>
+                        <i class="fas fa-paper-plane fa-3x send-button p-3" id="sendButton"></i>
+                    </center>
+                    <br>
+                </div>
+                <br>
+                <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+                <p class="copyright">Email - lucero2a134@gmail.com</p>
+                <center>
+                    <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+                    <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/register.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>

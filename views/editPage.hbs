@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Edit Page</title>
+</head>
+
+<body>
+
+    <!-- Edit page window -->
+    <div class="container">
+        <div id="message"></div>
+        <div class="card carded my-3" style="width: 100%;">
+            <div class="card-body">
+                <i class="fas fa-arrow-left mb-2" style="cursor: pointer;" id="back"></i>
+                <h1 class="guide-heading p-1">Edit Page Info</h1>
+                <div class="new-page-entry">
+                    <br>
+                    <h5 style="font-family: sans-serif;">Subtitle <span
+                        style="font-size: 15px; font-weight: bold;">(1-40)</span>:</h5>
+                    <input type="text" class="form-control" id="subtitle" placeholder="Subtitle"
+                        style="border: solid grey 2px;"><div id="subtitle_index">0</div>
+                        <div id="subtitle-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">
+                        </div>
+                    <br><br>
+                    <h5 style="font-family: sans-serif;">About <span
+                        style="font-size: 15px; font-weight: bold;">(1-500)</span>:</h5>
+                    <textarea class="form-control" id="about" style="border: solid grey 2px;" rows="4"  placeholder="About"></textarea>
+		    <div id="about_index">0</div>
+                    <div id="about-validate" style="color: rgb(134, 9, 9); font-weight: bold; font-size: smaller;">
+                    </div>
+                    <br><br>
+                    <div class="radio-box p-3">
+                        <h6 style="font-family: sans-serif; font-weight: bold;">Is this a private page</h6>
+                        <h6 style="font-family: sans-serif;">Private pages can only be viewed by its members</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="private" id="yes">
+                            <label class="form-check-label" for="yes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="private" id="no">
+                            <label class="form-check-label" for="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="radio-box p-3">
+                        <h6 style="font-family: sans-serif; font-weight: bold;">Who can post blog</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="allPost" id="both">
+                            <label class="form-check-label" for="both">
+                                Both members and admins
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="allPost" id="only">
+                            <label class="form-check-label" for="only">
+                                Only admins
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <center><div class="spinner-border" role="load" id="load" style="display: none;"></div></center>
+                    <button class="btn btn-primary mb-2" style="width: 100%;" id="sendButton">Update</button>
+                </div>
+                <br>
+                <p class="copyright">Copyright © 2022 Jatin Gautam </p>
+                <p class="copyright">Email - lucero2a134@gmail.com</p>
+                <center>
+                    <p class="copyright"><span><i class="fab fa-twitter-square copyright fa-2x"></i></span> www.twitter.com/Jatin2_99</p>
+                    <p class="copyright"><span><i class="fab fa-linkedin copyright fa-2x"></i></span> www.linkedin.com/in/jatin-gautam2o99</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="js/editPage.js"></script>
+    <script src="/jq/jquery.js"></script>
+    <script src="/js/bootstrap.js"></script>
+
+</body>
+
+</html>
