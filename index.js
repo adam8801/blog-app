@@ -23,7 +23,7 @@ const app = express();
     useUnifiedTopology: true
 });*/
 
-//"mongodb+srv://doadmin:543l618ArtYx2K0n@db-mongodb-blr1-93355-f9d4e512.mongo.ondigitalocean.com/admin?authSource=admin&tls=true"
+//
 
 const staticPath = path.join(__dirname, "./public");
 
